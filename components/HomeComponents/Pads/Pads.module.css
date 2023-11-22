@@ -1,0 +1,17 @@
+.pads__module {
+  padding: 50px 80px 100px;
+  background-color: #000;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-around;
+  gap: 20px;
+}
+
+@media screen and (max-width: 1350px) {
+  .pads__module {
+    padding: 50px 0 100px;
+    overflow: auto;
+    width: 100%;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,15 @@
+.prospects__module {
+  padding: 50px 84px 20px;
+  background-color: #000;
+  background-image: linear-gradient(180deg, #000 30%, rgba(0, 0, 0, 0) 250%),
+    url("../../../assets/bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1350px) {
+  .prospects__module {
+    padding: 50px 20px;
+  }
+}

@@ -1,0 +1,173 @@
+.vision__module {
+  padding: 150px 80px;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 10000;
+}
+
+.vision__module .left h3 {
+  width: 699px;
+  color: var(--White, #fff);
+  font-family: var(--heading-font);
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 120%; /* 45.6px */
+  text-transform: uppercase;
+  z-index: 100000;
+}
+.vision__module .left h3 span {
+  background: var(--Linear, linear-gradient(90deg, #3d8bff 0%, #ab23ff 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 1000000;
+}
+.vision__module .left div {
+  /* background: url("../../../assets/creon.svg"), lightgray 50% / cover no-repeat; */
+  width: 836px;
+  height: 502px;
+  text-align: right;
+  z-index: 0;
+  /* position: absolute;
+  right: 0; */
+}
+.vision__module .right {
+  width: 552px;
+  height: 804px;
+}
+.vision__module .right .acc {
+  position: relative;
+  border-bottom: 1px solid var(--Grey-line, #13171d);
+  padding-bottom: 20px;
+}
+.vision__module .right .acc .acc__head,
+.vision__module .right .acc .acc__head div {
+  display: flex;
+  align-items: center;
+}
+.vision__module .right .acc .acc__head div {
+  gap: 40px;
+}
+.vision__module .right .acc .acc__head div h5 {
+  width: 366px;
+  color: var(--White, #fff);
+  font-family: var(--satoshi-bold);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 130%; /* 28.6px */
+}
+.vision__module .right .acc .acc__head {
+  cursor: pointer;
+}
+.vision__module .right .acc .acc__body {
+  width: 100%;
+  color: var(--White, #fff);
+  font-family: var(--satoshi-normal);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 130%; /* 23.4px */
+  margin-top: 20px;
+  transition: height 0.2s ease-in-out;
+  overflow: hidden;
+  /* position: absolute;
+  right: 0; */
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.vision__module .right .acc .acc__body div {
+  width: 422px;
+}
+
+@media screen and (max-width: 1350px) {
+  .vision__module {
+    padding: 150px 20px;
+  }
+  .vision__module .left {
+    width: 365px;
+  }
+  .vision__module .right {
+    width: 472px;
+  }
+  .vision__module .left h3 {
+    font-size: 28px;
+    width: 100%;
+  }
+  .vision__module .left div {
+    position: absolute;
+    width: 628px;
+    height: 377px;
+  }
+  .vision__module .right .acc .acc__head div h5 {
+    width: 323px;
+    font-size: 18px;
+  }
+  .vision__module .right .acc .acc__body {
+    font-size: 16px;
+  }
+  .vision__module .right .acc .acc__body div,
+  .vision__module .left div img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .vision__module {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .vision__module .left div {
+    right: 0;
+    bottom: 100px;
+    width: 428px;
+    height: 377px;
+  }
+  .vision__module .left {
+    width: 100%;
+  }
+  .vision__module .left h3 {
+    font-size: 28px;
+  }
+  .vision__module .right {
+    width: 472px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .vision__module {
+    padding: 100px 20px 0px;
+  }
+  .vision__module,
+  .vision__module .left h3 {
+    z-index: 10000;
+  }
+  .vision__module .left h3 {
+    font-size: 22px;
+    margin-bottom: 100px;
+  }
+  .vision__module .left div {
+    top: 180px;
+    z-index: 0;
+    width: 302px;
+    height: 182px;
+  }
+  .vision__module .left img {
+    z-index: 0;
+  }
+  .vision__module .right, .vision__module .right .acc,  .vision__module .right .acc .acc__head {
+    width: 100%;
+  }
+  .vision__module .right .acc .acc__head div h5 {
+    font-size: 18px;
+    width: 196px;
+  }
+  .vision__module .right .acc .acc__head img {
+    width: 73px;
+height: 83px;
+  }
+  .vision__module .right .acc .acc__head {
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,101 @@
+.profile__module {
+  padding: 150px 80px;
+  background: #000;
+}
+.profile__module h3 {
+  color: var(--White, #fff);
+  font-family: var(--heading-font);
+  font-size: 68px;
+  font-weight: 400;
+  line-height: 110%; /* 74.8px */
+  text-transform: uppercase;
+}
+.profile__module .tagline {
+  text-align: right;
+  font-family: var(--heading-font);
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 120%; /* 45.6px */
+  text-transform: uppercase;
+  background: var(--Linear, linear-gradient(90deg, #3d8bff 0%, #ab23ff 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.profile__module .divider {
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.profile__module .divider h5 {
+  color: var(--White, #fff);
+  font-family: var(--satoshi-bold);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 130%; /* 28.6px */
+  margin-bottom: 20px;
+}
+.profile__module .divider > div {
+  width: 391px;
+}
+.profile__module .divider p {
+  color: var(--White, #fff);
+  font-family: var(--satoshi-normal);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 130%; /* 23.4px */
+}
+
+@media screen and (max-width: 1350px) {
+  .profile__module {
+    padding: 100px 20px 20px;
+  }
+  .profile__module h3 {
+    width: 100%;
+    font-size: 44px;
+  }
+  .profile__module .tagline {
+    font-size: 28px;
+  }
+  .profile__module .divider img {
+    width: 636px;
+    height: 493px;
+  }
+  .profile__module .divider > div {
+    width: 258px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .profile__module .divider {
+    flex-direction: column;
+  }
+  .profile__module .divider img {
+    width: 100%;
+  }
+  .profile__module .divider > div {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .profile__module .divider img {
+    width: 100%;
+    height: 276px;
+    margin-bottom: 20px;
+  }
+  .profile__module h3 {
+    width: 100%;
+    font-size: 32px;
+  }
+  .profile__module .tagline {
+    font-size: 22px;
+  }
+  .profile__module .divider h5 {
+    font-size: 18px;
+  }
+  .profile__module .divider p {
+    font-size: 16px;
+  }
+}

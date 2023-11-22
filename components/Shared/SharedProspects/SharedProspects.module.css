@@ -1,0 +1,104 @@
+.shared__prospects {
+  width: 1440px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-direction: column;
+}
+.shared__prospects .prospect {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  min-height: 302px;
+  border-radius: 6px;
+  background: rgba(19, 23, 29, 0.6);
+  padding-left: 20px;
+}
+.shared__prospects .prospect h3 {
+  color: var(--White, #fff);
+  font-family: var(--heading-font);
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 120%; /* 45.6px */
+  text-transform: uppercase;
+  width: 907px;
+  margin-bottom: 20px;
+}
+.shared__prospects .prospect p {
+  color: var(--White, #fff);
+  font-family: var(--satoshi-normal);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 130%; /* 23.4px */
+  width: 907px;
+}
+.shared__prospects .prospect .prospect__image {
+  height: 100%;
+}
+
+@media screen and (max-width: 1480px) {
+  .shared__prospects,
+  .shared__prospects .prospect {
+    width: 100%;
+  }
+  .shared__prospects .prospect h3 {
+    width: 602px;
+    font-size: 28px;
+  }
+  .shared__prospects .prospect p {
+    width: 602px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1048px) {
+  .shared__prospects .prospect h3,
+  .shared__prospects .prospect p {
+    width: 437px;
+  }
+  .shared__prospects .prospect h3 {
+    font-size: 28px;
+  }
+  .shared__prospects .prospect p {
+    font-size: 16px;
+  }
+  .shared__prospects .prospect .prospect__image {
+    width: 223px;
+    overflow: hidden;
+  }
+  .shared__prospects .prospect .prospect__image img {
+    min-height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .shared__prospects {
+    flex-direction: row;
+    overflow: auto;
+  }
+  .shared__prospects .prospect {
+    flex-direction: column-reverse;
+    padding-left: 0;
+    width: 292px;
+    justify-content: flex-end;
+  }
+  .shared__prospects .prospect .prospect__details {
+    padding: 20px 10px;
+  }
+  .shared__prospects .prospect > div h3,
+  .shared__prospects .prospect .prospect__image img,
+  .shared__prospects .prospect p {
+    width: 100%;
+  }
+  .shared__prospects .prospect > div h3 {
+    font-size: 22px;
+  }
+  .shared__prospects .prospect .prospect__image {
+    height: 160px;
+  }
+  .shared__prospects .prospect .prospect__image img {
+    height: 100%;
+  }
+}

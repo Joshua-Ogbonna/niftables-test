@@ -1,0 +1,72 @@
+.creon__pass {
+  z-index: 100000;
+}
+.creon__pass .divider {
+  z-index: 100000;
+}
+.creon__pass .divider ul {
+  color: var(--White, #fff);
+  font-family: var(--satoshi-bold);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 130%; /* 23.4px */
+  /* padding-left: 0; */
+}
+.creon__pass .divider ul li {
+  list-style: none;
+  padding: 12px 18px 16px 18px;
+  border-radius: 6px;
+  border: 1px solid var(--Grey-line, #13171d);
+  margin: 20px 0;
+}
+.creon__pass .divider button {
+  display: flex;
+  width: 453px;
+  height: 54px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  background: var(--Linear, linear-gradient(90deg, #3d8bff 0%, #ab23ff 100%));
+  border: none;
+  margin-top: 50px;
+  color: var(--White, #fff);
+  text-align: center;
+  font-family: var(--satoshi-bold);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 110%; /* 19.8px */
+}
+.creon__pass .images {
+  position: relative;
+  width: 808px;
+  height: 808px;
+}
+.creon__pass .images img {
+  position: absolute;
+}
+
+@media screen and (max-width: 1280px) {
+  .creon__pass .divider h3,
+  .creon__pass .divider h5 {
+    width: 447px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  
+  .creon__pass .divider ul {
+    width: 199px;
+  }
+  .creon__pass .divider button {
+    width: 231px;
+    height: 46px;
+  }
+}
+
+@media screen and (max-width: 679px) {
+  .creon__pass .divider ul {
+    width: 100%;
+  }
+}

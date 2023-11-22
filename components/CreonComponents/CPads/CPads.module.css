@@ -1,0 +1,12 @@
+.cpads__module {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    gap: 40px;
+}
+
+@media screen and (max-width: 1350px) {
+    .cpads__module {
+        overflow: auto;
+    }
+}
