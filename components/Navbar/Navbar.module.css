@@ -3,6 +3,9 @@
   align-items: center;
   justify-content: space-between;
 }
+.navbar__module > img {
+  cursor: pointer;
+}
 .navbar__module ul {
   display: flex;
   align-items: center;
